@@ -47,8 +47,8 @@
             <p id="timer"> 60 </p>
         </div>
         <div>
-            <button onclick="start()">Start</button>
-            <button onclick="stop()">Stop</button>
+            <button class="btn btn-primary" onclick="start()">Start</button>
+            <button class="btn btn-danger" onclick="stop()">Stop</button>
         </div>
     </div>
     <script>
@@ -71,7 +71,7 @@
 
         function start() {
             clearInterval(x);
-            temps = 60;
+            temps = 60; 
             x = setInterval(diminuerTemps, 1000);
         }
 
